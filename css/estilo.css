@@ -1,0 +1,202 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+ul {
+    list-style: none;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    max-width: 1280px;
+    margin: 0 auto;
+    background-color: #5e5b5bad;
+    color: #333333;
+}
+
+body.modo-escuro {
+    background-color: #000000;
+    
+}
+
+header {
+    background-color: rgba(0, 128, 0, 0.116);
+    display: flex;
+    flex-direction: row;
+    /*isso permite que eu direcione os elementos*/
+    justify-content: space-between;
+    /*isso permite eu colocar espaços entre os elementos*/
+    padding: 25px;
+    margin: 0;
+
+
+}
+
+header .logo,
+header .imagem-botao {
+    width: 30PX;
+}
+
+/*quando eu coloco um espaco entre o header ea classe eu digo que quero pegar o logo que esta dentro da classe. somente esse logo, sem alterar outros logos, somente aquela classe logo*/
+
+header .imagem-botao,
+#botao-alterar-tema {
+    background: none;
+    border: none;
+    cursor: pointer;
+}
+
+header .logo:hover,
+header .imagem-botao:hover {
+    transform: scale(1.25);
+    transition: 0.2s ease-in-out;
+}
+
+main {
+
+    padding: 25px;
+
+}
+
+main .listagem-pokemon {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+    /*espacamento entre os cartões*/
+    justify-content: center;
+
+
+}
+
+main .cartao-pokemon {
+    background-color: #d8e3ec;
+    width: 200px;
+    padding: 15px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+    border-radius: 20px;
+    transition: 0.2s ease-in-out;
+}
+
+main .cartao-pokemon:hover {
+    background-color: #96d9e6;
+    transform: scale(1.05);
+    cursor: pointer;
+
+}
+
+.modo-escuro .cartao-pokemon:hover {
+    background-color: #a8a8a8;
+}
+
+main .cartao-pokemon .informacoes {
+    display: flex;
+    justify-content: space-between;
+    border: 1px solid #333333;
+    border-radius: 10px;
+}
+
+main .cartao-pokemon .informacoes span {
+
+    padding: 5px;
+    text-transform: uppercase;
+    font-size: 17px;
+
+
+}
+
+.cartao-pokemon .informacoes:hover {
+    border: 1.5px solid #333333;
+}
+
+main .cartao-pokemon .gif {
+    width: 90px;
+    height: 90px;
+    background-color: rgba(128, 128, 128, 0);
+
+
+}
+
+main .cartao-pokemon .tipos {
+
+    display: flex;
+    gap: 15px;
+
+
+
+}
+
+main .cartao-pokemon .tipo {
+    padding: 8px;
+    border-radius: 20px;
+
+}
+
+.grama {
+    background-color: #7ac74c;
+}
+
+.veneno {
+    background-color: #df67ddfb;
+}
+
+.fogo {
+    background-color: #ee8130;
+}
+
+.agua {
+    background-color: #6390f0;
+}
+
+.inseto {
+    background-color: #a6b91a;
+}
+
+main .descricao {
+    max-height: 80px;
+    overflow-y: scroll;
+    font-size: 14px;
+    padding-right: 10px;
+    text-indent: 3em;
+}
+
+
+
+.informacoes:hover {
+    word-spacing: 15px;
+    border-top: #041946;
+    border-right: #7ac74c;
+    border-bottom: #ee8130;
+    border-left-color:red ;
+}
+
+.web-pokemon {
+    background-color: #6390f000;
+    border: none;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    gap: 30px;
+    font-size: larger;
+    align-content: center;
+    box-shadow: 0 rgb(66, 66, 202);
+    font-style: normal;
+    contain: none;
+    box-decoration-break: clone;
+    text-decoration: none;
+
+    
+}
+
+.web-pokemon:hover {
+    transition: 5.2s ease-in-out;
+    
+    transition: 5.2s ease-in-out;
+    transform: rotate(360deg);
+    transition: 5.2s ease-in-out;
+
+
+}
+

@@ -1,0 +1,29 @@
+@charset "utf-8";
+
+* {
+    margin:0; /*Externo*/
+    padding: 0; /*interno*/
+    box-sizing: border-box;
+}
+
+ul {
+    list-style: none;
+}
+
+ul.listagem-pokemon {
+    color: rgb(23, 41, 5);
+}
+
+.imagem-botao {
+    background-color: rgb(255, 255, 255);
+}
+
+.tipo-grama:hover, .tipo-veneno:hover {
+    text-transform: uppercase;
+   
+}
+
+.logo {
+    width: 50px;
+    
+}
